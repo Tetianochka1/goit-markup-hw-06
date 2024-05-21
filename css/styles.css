@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p {
 
         .page-logo{
             margin-right: 120px;
-            padding: 24px 0;
+            padding: 24px 0 0;
         }
 
 
@@ -277,11 +277,10 @@ h1, h2, h3, h4, h5, h6, p {
 
        .hero {
         background-color: #2e2f42;
-        max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding-top: 72px;
+        padding-bottom: 72px;
         background-image:  linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-min.jpg);
         background-repeat: no-repeat;
         background-position: center center;
@@ -326,7 +325,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
             .hero{
-            background-image:  linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob2x-min.png);
+            background-image:  linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob2x-min.jpg);
         }
         
         }
@@ -353,13 +352,14 @@ h1, h2, h3, h4, h5, h6, p {
     @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
          .hero {
               background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab2x-min.jpg);
+              padding-top: 188px;
+            padding-bottom: 188px;
          }
      }
                 
 @media screen and (min-width: 1158px) {
     .hero{
         max-width: 1440px;
-        min-height: 600px;
         margin: 0 auto;
         padding: 0 16px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desktop-min.jpg);
@@ -448,6 +448,7 @@ margin-bottom: 8px;
   @media screen and (min-width: 1158px) {
     .section-features{
         max-width: 1128px;
+        padding: 15px;
         
     }
     .features-icon-wrapper {
@@ -462,20 +463,10 @@ margin-bottom: 8px;
         gap: 24px;
         padding-right: 15px;
         padding-left: 15px;
+        height: 112px;
+        background-color: rgba(244, 244, 253, 1);
         }
 
-        .icon-features{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            background-color: rgba(244, 244, 253, 1);
-            border-radius: 4px 4px 4px 4px;
-            margin-bottom: 8px;
-            padding: 24px 100px;
-            height: 112px;
-            
-        }
 
         .features-list{
             display: flex;
@@ -527,6 +518,7 @@ margin: 0 auto 72px;
     gap: 72px 28px;
     width: calc(100% - 24px);
     margin: 0 auto;
+    padding-bottom: 120px;;
 }
 
 .our-team-item{
@@ -638,14 +630,16 @@ margin: 0 auto 72px;
 }
 
 .our-portfolio-item{
-    width: 288px;
-    height: 400px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #ffffff;
     cursor: pointer;
-    padding-left: 16px;
+    
 
+}
+
+.item-name{
+    padding: 32px 16px;
 }
 .our-portfolio-item-name{
     font-weight: 500;
@@ -697,13 +691,11 @@ margin: 0 auto 72px;
     }
 
     .our-portfolio-item{
-        max-width: calc((100% - 24px) / 2);
+        width: calc((100% - 48px) / 3);
         margin: 0 0;
     }
     
-    .item-name{
-        padding: 32px 16px;
-    }
+    
     .our-portfolio-item{
         
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -765,7 +757,6 @@ margin: 0 auto 72px;
     color: #4d5ae5;
     display: inline-block;
     justify-content: center;
-    margin-bottom: 16px;
     text-align: center;
 
 }
@@ -782,7 +773,7 @@ margin: 0 auto 72px;
     color: #f4f4fd;
     max-width: 264px;
     text-align: left;
-    margin-bottom: 72px;
+  
 }
 
 .footer-info{
@@ -884,7 +875,7 @@ margin: 0 auto 72px;
         flex-wrap: wrap;
         gap: 72px 24px;
         align-items: baseline;
-        width: 584px;
+        width: 1158px;
       
     }
     .footer-info{
@@ -910,6 +901,10 @@ margin: 0 auto 72px;
         padding-bottom: 100px;
     }
 
+    .page-logo{
+        flex-direction: left;
+    }
+    
     .footer-container {
         gap: 0;
         padding-left: 15px;
